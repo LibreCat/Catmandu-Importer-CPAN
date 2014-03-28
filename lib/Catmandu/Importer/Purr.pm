@@ -4,7 +4,9 @@ use Catmandu::Sane;
 use MetaCPAN::API::Tiny;
 use Moo;
 
-our $VERSION = '0.01';
+with 'Catmandu::Importer';
+
+our $VERSION = '0.02';
 
 has prefix => (is => 'ro' , default => sub { "Catmandu" });
 has mcpan  => (is => 'ro' , lazy => 1, builder => '_build_mcpan');
