@@ -1,0 +1,7 @@
+Revision history for Catmandu-Importer-Prr
+
+{{$NEXT}}
+  - migrating to Dist::Milla
+
+0.01 2014-03-28
+  - initial version
