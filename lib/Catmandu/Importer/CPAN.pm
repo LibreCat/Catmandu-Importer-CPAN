@@ -1,4 +1,4 @@
-package Catmandu::Importer::Purr;
+package Catmandu::Importer::CPAN;
 
 use Catmandu::Sane;
 use MetaCPAN::API::Tiny;
@@ -78,12 +78,12 @@ __END__
 
 =head1 NAME 
 
-Catmandu::Importer::Purr - Perl Utility for Recent Releases
+Catmandu::Importer::CPAN - get information about CPAN releases
 
 =head1 SYNOPSIS
 
-  use Catmandu::Importer::Purr;
-  my $importer = Catmandu::Importer::Purr->new( prefix => 'Catmandu' );
+  use Catmandu::Importer::CPAN;
+  my $importer = Catmandu::Importer::CPAN->new( prefix => 'Catmandu' );
  
   $importer->each(sub {
      my $module = shift;
@@ -94,7 +94,12 @@ Catmandu::Importer::Purr - Perl Utility for Recent Releases
  
 Or with the L<catmandu> command line client:
 
-  $ catmandu convert Purr --author NICS --fields distribution,date to CSV
+  $ catmandu convert CPAN --author NICS --fields distribution,date to CSV
+
+=head1 DESCRIPTION
+
+This L<Catmandu::Importer> retrieves information about CPAN releases via
+MetaCPAN API.
 
 =head1 CONFIGURATION
 
@@ -121,9 +126,5 @@ by default.
 Patrick Hochstenbach, C<< <patrick.hochstenbach at ugent.be> >>
 
 Jakob Voß C<< <jakob.voss at gbv.de> >>
-
-=head1 SEE ALSO
-
-L<Catmandu>, L<Catmandu::Importer>
 
 =cut

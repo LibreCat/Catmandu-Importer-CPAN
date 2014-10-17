@@ -1,30 +1,55 @@
 # NAME 
 
-Catmandu::Importer::Purr - Perl Utility for Recent Releases
+Catmandu::Importer::CPAN - get information about CPAN releases
 
 # SYNOPSIS
 
-    use Catmandu::Importer::Purr;
-
-    my $importer = Catmandu::Importer::Purr->new(prefix => 'Catmandu');
+     use Catmandu::Importer::CPAN;
+     my $importer = Catmandu::Importer::CPAN->new( prefix => 'Catmandu' );
     
-    $importer->each(sub {
-           my $module = shift;
-           print $module->{id} , "\n";
-           print $module->{date} , "\n";
-           print $module->{distribution} , "\n";
-           print $module->{version} , "\n";
-           print $module->{abstract} , "\n";
-    });
+     $importer->each(sub {
+        my $module = shift;
+        print $module->{distribution} , "\n";
+        print $module->{version} , "\n";
+        print $module->{date} , "\n";
+     });
     
-    # or
 
-    $ catmandu convert Purr
+Or with the [catmandu](https://metacpan.org/pod/catmandu) command line client:
 
-# AUTHORS
+    $ catmandu convert CPAN --author NICS --fields distribution,date to CSV
 
-    Patrick Hochstenbach, C<< <patrick.hochstenbach at ugent.be> >>
+# DESCRIPTION
 
-# SEE ALSO
+This [Catmandu::Importer](https://metacpan.org/pod/Catmandu::Importer) retrieves information about CPAN releases via
+MetaCPAN API.
 
-[Catmandu](https://metacpan.org/pod/Catmandu), [Catmandu::Importer](https://metacpan.org/pod/Catmandu::Importer)
+# CONFIGURATION
+
+- prefix
+
+    Prefix that releases must start with, e.g. `Catmandu`.
+
+- author
+
+    Selected author
+
+- fields
+
+    Array reference or comma separated list of fields to get.  The special value
+    `all` will return all fields.  Set to `id,date,distribution,version,abstract`
+    by default.
+
+# CONTRIBUTORS
+
+Patrick Hochstenbach, `<patrick.hochstenbach at ugent.be>`
+
+Jakob Voß `<jakob.voss at gbv.de>`
+
+# POD ERRORS
+
+Hey! **The above document had some coding errors, which are explained below:**
+
+- Around line 52:
+
+    Non-ASCII character seen before =encoding in 'Voß'. Assuming ISO8859-1
