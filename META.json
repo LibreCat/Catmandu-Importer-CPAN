@@ -12,7 +12,7 @@
       "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
       "version" : "2"
    },
-   "name" : "Catmandu-Purr",
+   "name" : "Catmandu-Importer-CPAN",
    "no_index" : {
       "directory" : [
          "t",
@@ -52,13 +52,13 @@
    "release_status" : "stable",
    "resources" : {
       "bugtracker" : {
-         "web" : "https://github.com/LibreCat/Catmandu-Purr/issues"
+         "web" : "https://github.com/LibreCat/Catmandu-Importer-CPAN/issues"
       },
-      "homepage" : "https://github.com/LibreCat/Catmandu-Purr",
+      "homepage" : "https://github.com/LibreCat/Catmandu-Importer-CPAN",
       "repository" : {
          "type" : "git",
-         "url" : "https://github.com/LibreCat/Catmandu-Purr.git",
-         "web" : "https://github.com/LibreCat/Catmandu-Purr"
+         "url" : "https://github.com/LibreCat/Catmandu-Importer-CPAN.git",
+         "web" : "https://github.com/LibreCat/Catmandu-Importer-CPAN"
       }
    },
    "version" : "0.03",

@@ -5,6 +5,7 @@ Revision history for Catmandu-Importer-CPAN
   - support query by author
   - remove default prefix
   - provide more fields on request
+  - renamed the github to https://github.com/LibreCat/Catmandu-Importer-CPAN
 
 0.02  2014-05-24 14:39:26 CEST
   - migrating to Dist::Milla
