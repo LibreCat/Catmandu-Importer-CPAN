@@ -125,6 +125,6 @@ by default.
 
 Patrick Hochstenbach, C<< <patrick.hochstenbach at ugent.be> >>
 
-Jakob Voß C<< <jakob.voss at gbv.de> >>
+Jakob Voss C<< <jakob.voss at gbv.de> >>
 
 =cut
