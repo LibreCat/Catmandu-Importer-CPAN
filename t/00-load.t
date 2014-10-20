@@ -4,7 +4,7 @@ use Test::More;
 
 my $pkg;
 BEGIN {
-    $pkg = 'Catmandu::Importer::Purr';
+    $pkg = 'Catmandu::Importer::CPAN';
     use_ok $pkg;
 }
 

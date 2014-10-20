@@ -1,7 +1,13 @@
-Revision history for Catmandu-Importer-Purr
+Revision history for Catmandu-Importer-CPAN
 
-0.02 2014-03-28
-  - fixes subclassing
+{{$NEXT}}
+  - renamed from Catmandu-Importer-Purr
+  - support query by author
+  - remove default prefix
+  - provide more fields on request
+
+0.02  2014-05-24 14:39:26 CEST
+  - migrating to Dist::Milla
 
 0.01 2014-03-28
   - initial version
