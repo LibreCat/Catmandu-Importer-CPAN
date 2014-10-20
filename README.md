@@ -44,12 +44,4 @@ MetaCPAN API.
 
 Patrick Hochstenbach, `<patrick.hochstenbach at ugent.be>`
 
-Jakob Voß `<jakob.voss at gbv.de>`
-
-# POD ERRORS
-
-Hey! **The above document had some coding errors, which are explained below:**
-
-- Around line 52:
-
-    Non-ASCII character seen before =encoding in 'Voß'. Assuming ISO8859-1
+Jakob Voss `<jakob.voss at gbv.de>`
