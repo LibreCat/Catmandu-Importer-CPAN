@@ -2,3 +2,6 @@
 /.build
 !META.json
 LICENSE
+.perl-version
+cpanfile.snapshot
+local
