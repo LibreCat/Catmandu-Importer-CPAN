@@ -1,19 +1,18 @@
-# NAME 
+# NAME
 
 Catmandu::Importer::CPAN - get information about CPAN releases
 
 # SYNOPSIS
 
-     use Catmandu::Importer::CPAN;
-     my $importer = Catmandu::Importer::CPAN->new( prefix => 'Catmandu' );
-    
-     $importer->each(sub {
-        my $module = shift;
-        print $module->{distribution} , "\n";
-        print $module->{version} , "\n";
-        print $module->{date} , "\n";
-     });
-    
+    use Catmandu::Importer::CPAN;
+    my $importer = Catmandu::Importer::CPAN->new( prefix => 'Catmandu' );
+
+    $importer->each(sub {
+       my $module = shift;
+       print $module->{name} , "\n";
+       print $module->{version} , "\n";
+       print $module->{date} , "\n";
+    });
 
 Or with the [catmandu](https://metacpan.org/pod/catmandu) command line client:
 

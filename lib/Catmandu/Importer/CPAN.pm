@@ -6,7 +6,7 @@ use Moo;
 
 with 'Catmandu::Importer';
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 has prefix => (is => 'ro');
 has author => (is => 'ro');
